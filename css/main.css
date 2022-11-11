@@ -55,7 +55,36 @@ html {
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
+/* ----- TYPOGRAPHY ----- */
 
+h1, 
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.75em;
+}
+
+i {
+    font-size: 2.5rem;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -262,7 +291,82 @@ html {
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
+/* ----- HEADER ----- */
 
+header img {
+    width: 100px;
+}
+
+header > div:last-child {
+    background: url(../img/bg-header-balloons.jpg) left no-repeat;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    -o-backgroun-size: contain;
+    -ms-background-size: contain;
+    background-size: contain;
+    padding: 95px 0 60px;
+    margin-top: 25px;
+    background-color: #FFD8DB;
+
+}
+
+header nav {
+    width: 360px;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+nav li {
+    list-style-type: none;
+    }
+
+nav ul {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #00B0A3;
+    padding: 4px 8px;
+    font: 400 16px 'Open Sans', sans-serif;
+}
+
+a:hover {
+    background-color: #FFD8DB;
+    color: #003833;
+    border-radius: 16px;
+}
+
+
+/* ----- SYSYTEMS ----- */
+
+/* ----- LAYOUT ----- */
+
+/* ----- TESTING ----- */
+
+/* ----- BENEFITS ----- */
+
+/* ----- FOOTER ----- */
+
+footer img {
+    width: 80px;
+}
+
+footer li {
+    padding-bottom: 10px;
+}
+
+h4 {
+    margin: 0;
+}
+
+footer a {
+    padding: 0;
+}
 /*--------------------------------------------------------------
     7.0 - UTILITY
 -------------------------------------------------------------- */
