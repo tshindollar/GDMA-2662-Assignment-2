@@ -68,27 +68,23 @@ h3 {
     color: #00B0A3;
 }
 
-h2, 
-h3 {
-    text-align: left;
-}
-
 h1 {
     font-size: 4.3rem;
-    line-height: .5em;
-    margin-top: 2.45em;
-    padding-top: 3.5em;
+    line-height: 1.2em;
+    margin: 7em 0 .25em;
 }
 
 h2 {
     font-size: 2.8rem;
-    margin: 1em 0 0;
+    line-height: 1.5em;
+    margin: 1em 0 .2em;
 }
 
 h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 0 0 .6em;
+    margin: 0 0 .7em;
+    text-align: left;
 }
 
 p {
@@ -100,6 +96,18 @@ p {
 i {
     font-size: 2.3rem;
 
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 7rem;
+        line-height: 1em;
+        margin: 1.25em 0 0;
+    }
+    
+    p {
+        font-size: 1.1rem;
+    }
 }
 
 /* ----- ANCHOR ----- */
@@ -116,15 +124,7 @@ a:hover {
     color: #003833;
     border-radius: 16px;
 }
-/* @media screen and (min-width: 768px) {
 
-
-}
-
-@media screen and (min-width: 1024px) {
-
-  
-} */
 
 /*--------------------------------------------------------------
     5.0 - OBJECTS
@@ -149,6 +149,11 @@ a:hover {
 
 [class*='col-'] {
     padding: 10px 5px;
+}
+
+[class*='col-'] [class*='col-'] {
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 .col-sm-1 {
@@ -208,6 +213,11 @@ a:hover {
 
     [class*='col-'] {
         padding: 10px;
+    }
+
+    [class*='col-'] [class*='col-'] {
+        margin-left: -10px;
+        margin-right: -10px;
     }
 
     .col-md-1 {
@@ -341,15 +351,19 @@ header img {
     width: 100px;
 }
 
-header > div:last-child .wrapper{
-    background: url(../img/bg-header-balloons.jpg) left no-repeat;
+header > div:last-child .wrapper {
+    background: url(../img/bg-header-balloons.jpg) left bottom no-repeat;
     -moz-background-size: contain;
     -webkit-background-size: contain;
     -o-backgroun-size: contain;
     -ms-background-size: contain;
     background-size: contain;
+    padding: 1px 0;
+}
+
+header > div:last-child {
     background-color: #FFD8DB;
-    width: 100%;
+    margin-top: .625em;
 }
 
 
@@ -363,7 +377,7 @@ header nav {
 
 header li {
     display: inline-block;
-    padding: 0 10px;
+    margin: 0 10px;
 }
 
 nav ul {
@@ -372,6 +386,7 @@ nav ul {
 
 nav li {
     list-style-type: none;
+    margin-bottom: 10px;
 } 
 
 header > div:first-child {
@@ -386,13 +401,34 @@ header > div:first-child {
 
 header p {
     font-size: 1.3rem;
-    margin-bottom: 2.6em;
+    margin-bottom: 3em;
 }
 
-header > div:last-child {
-    margin-top: .625em;
-}
+@media screen and (min-width: 1024px) {
 
+    body > header {
+        text-align: left;
+    }
+
+    header nav {
+        text-align: right;
+    }
+
+    header > div:last-child {
+        margin-top: 113px;
+        text-align: center;
+    }
+   
+    header > div:last-child div {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+    
+}
 /* ----- SYSYTEMS ----- */
 
 section .row {
@@ -404,15 +440,31 @@ section .row {
     text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+    #systems, 
+    #systems h3 {
+        text-align: center;
+    }
+    
+    #systems .col-lg-4 {
+        align-content: flex-start;
+    }
+
+    section .row {
+        margin-top: 1em;
+    }
+}
+
 /* ----- LAYOUT ----- */
 
 #layout .col-lg-4 {
     background-color: #FFD8DB;
     padding: 3.75em 1.9em;
-    margin: 7.5em 0;
+    margin: 4.5em 0;
 }
 
 #layout .col-lg-4 h2 {
+    font-size: 2.6rem;
     margin: 0 0 .3em;
 }
 
@@ -422,17 +474,20 @@ section .row {
 
 /* ----- TESTING ----- */
 
-#testing .col-lg-5 {
-    background: url(../img/balloon-rainbow.jpg) center no-repeat;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-backgroun-size: cover;
-    -ms-background-size: cover;
-    background-size: cover;
-    width: 100%;
-    display: none;
-    
+@media screen and (min-width: 1024px) {
+
+    #testing .col-lg-5 {
+        background: url(../img/balloon-rainbow.jpg) center no-repeat;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-backgroun-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        
+    }
 }
+
+
 
 /* ----- BENEFITS ----- */
 
@@ -446,6 +501,7 @@ section .row {
 
 #benefits header p {
     font-size: 1.2rem;
+    margin-bottom: 1.5em;
 }
 
 /* ----- FOOTER ----- */
@@ -462,7 +518,7 @@ footer img {
 }
 
 footer li {
-    padding-bottom: 1.6em;
+    margin-bottom: 1.6em;
 }
 
 h4 {
@@ -474,6 +530,12 @@ footer p {
     font-size: 1.1rem;
 }
 
+@media screen and (min-width: 1024px) {
+
+    footer nav {
+        text-align: left;
+    }
+}
 /*--------------------------------------------------------------
     7.0 - UTILITY
 -------------------------------------------------------------- */
