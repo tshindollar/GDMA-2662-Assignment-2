@@ -8,12 +8,18 @@
 3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
 4.0 - Elements: styling for bare/generic HTML elements 
         - Typography: Headings, Paragraphs, Blockquotes, Anchors, Lists, Color
+        - Anchor
 5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
         - Framework
+        - Header 
+        - Systems 
+        - Layout 
+        - Testing 
+        - Benefits 
+        - Footer
 6.0 - Components: specific designed components
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
         - Alignment
-        - Screenreader
 --------------------------------------------------------------*/
 
 
@@ -395,6 +401,7 @@ footer {
     text-align: center;
 }
 
+
 /* ----- HEADER ----- */
 
 header img {
@@ -520,8 +527,8 @@ body > header p {
     section .row {
         margin-top: 1em;
     }
-    
 }
+
 
 /* ----- LAYOUT ----- */
 
@@ -565,6 +572,7 @@ body > header p {
         margin: 4em 0 1em;
     }
 }
+
 
 /* ----- TESTING ----- */
 
@@ -653,6 +661,7 @@ footer p {
         font-size: 1.3rem;
     }
 }
+
 
 /*--------------------------------------------------------------
     7.0 - UTILITY
