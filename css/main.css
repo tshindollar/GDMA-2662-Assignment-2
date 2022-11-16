@@ -71,14 +71,13 @@ h1 {
 h2 {
     font-size: 2.5rem;
     line-height: 1.5em;
-    padding: 1em 0 .2em;
+    margin: 1em 0 .2em;
 }
 
 h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 0 0 .7em;
-    text-align: left;
 }
 
 h4 {
@@ -93,7 +92,6 @@ p {
 
 i {
     font-size: 2rem;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -562,6 +560,10 @@ body > header p {
     #layout .col-lg-4 h2 {
         font-size: 2.6rem;
     }
+
+    #layout .col-lg-4 {
+        margin: 4em 0 1em;
+    }
 }
 
 /* ----- TESTING ----- */
@@ -607,10 +609,6 @@ body > header p {
 
     #benefits .col-lg-2 {
         text-align: right;
-    }
-
-    #benefits .col-lg-6:first-child {
-        padding-right: 25px;
     }
 }
 
@@ -664,19 +662,4 @@ footer p {
 
 .col-center {
     justify-content: center;
-}
-
-/* ----- SCREENREADER ----- */
-
-.sr-only {
-    position: absolute;
-      position: absolute !important;
-      width: 1px !important;
-      height: 1px !important;
-      padding: 0 !important;
-      margin: -1px !important;
-      overflow: hidden !important;
-      clip: rect(0,0,0,0) !important;
-      white-space: nowrap !important;
-      border: 0 !important;
 }
